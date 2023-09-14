@@ -36,7 +36,8 @@
 
   .showMenu{
     transform: translateX(200px);
-    transition: transform 300ms
+    transition: transform 300ms;
+    width: calc(100% - 48px);
   }
 
   header {
@@ -172,8 +173,6 @@
     top: 60px;
     padding: 24px;
     background-color: #FFFFFF;
-    z-index: 2;
-    width: 100%;
   }
 
   .mobile-menu a {
