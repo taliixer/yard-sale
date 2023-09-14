@@ -9,7 +9,7 @@ const shoppingCart = $('.logo_shopping-cart');
 // Info section
 const desktopMenu = $('.desktop-menu');
 const mobileMenu = $('.mobile-menu');
-const shoppingSection = $('.product-detail');
+const shoppingSection = $('#shoppingCartContainer');
 const mainContainer = $('.main-container');
 const cardContainer = $('.cards-container');
 
