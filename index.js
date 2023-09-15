@@ -19,6 +19,10 @@ const galleryProducts = $('.cards-container');
 correoBarraNavegacion.addEventListener('click', openProfile);
 hamburguerMenu.addEventListener('click', openMenu);
 botonShoppingCart.addEventListener('click',  openShoppingCar);
+botonShoppingCart.addEventListener('click',  () => {
+    manejarEstado(productsInMyShoppingCart,dinamicSections)
+});
+
 containerGalleryProducts.addEventListener('click', () => {
     reset(productsInMyShoppingCart, mobileMenu)
 });
@@ -187,7 +191,9 @@ function productRender(array) {
 }
 
 function openProductDetailAside (){
+    // reset(mobileMenu, productDetailSection)
     productDetailSection.classList.remove('inactive');
+    mobileMenu.classList.remove('showMenu');
 }
 
 function closeProductDetailAside() {
