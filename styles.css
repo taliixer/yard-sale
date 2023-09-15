@@ -219,6 +219,7 @@
   /* INFO Shopping cart*/
 
   #shoppingCartContainer{
+    background-color: white;
     padding: 0 24px;
   }
 
