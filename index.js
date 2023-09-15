@@ -40,66 +40,7 @@ function ingresarProducto(nombre,precio,imagen) {
     productList.push(producto);
 }
 
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
-ingresarProducto(
-    'Bike',
-    12700, 
-    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-);
-ingresarProducto(
-    'Tennis Montain Bike',
-    2200,
-    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
-);
+
 
 // * Esta funcion me ayuda a ocultar los elementos de menu cuando hay otro menu abierto
 function reset(elementoParaEsconder,elementoParaMostrar) {
@@ -199,6 +140,67 @@ function openProductDetailAside (){
 function closeProductDetailAside() {
     productDetailSection.classList.add('inactive');
 }
+
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
+ingresarProducto(
+    'Bike',
+    12700, 
+    'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
+);
+ingresarProducto(
+    'Tennis Montain Bike',
+    2200,
+    'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8ea578f6c07847fca2d0ac85011d7f1f_9366/Tenis_para_Mountain_Bike_Five_Ten_Freerider_Negro_FW2835_01_standard.jpg'
+);
 
 productRender(productList);
 
