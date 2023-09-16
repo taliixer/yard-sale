@@ -37,7 +37,6 @@
   .showMenu{
     transform: translateX(200px);
     transition: transform 300ms;
-    width: calc(100% - 48px);
   }
 
   header {
