@@ -1,3 +1,5 @@
+// Construccion dinamica de los elementos dentro del carrito de compras cuando se da clieck en agregar al carrito en la informacion de un producto
+
 export function addProductsShoppingCart() {
     //Elemento padre
     const contenedorProductosAgregados = document.querySelector('#allProductsInCart')

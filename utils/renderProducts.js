@@ -3,8 +3,8 @@ import { addProductsShoppingCart } from './addProductsShoppingCart.js'
 
 
 const galleryProducts = document.querySelector('.cards-container');
-let idProduct = 1
 
+//Creacion dinamica Galeria productos Home
 export function productRender(array) {
     
     for (const product of array){
@@ -24,7 +24,6 @@ export function productRender(array) {
         productInfo.classList.add('product-info');
         productImage.setAttribute('src', product.image)
         productImgCard.setAttribute('src','./icons/bt_add_to_cart.svg')
-        productCard.setAttribute('id', idProduct)
         
         //Dar el contenido a los elementos
         productPriece.textContent = `${product.precio},00`;
@@ -39,11 +38,11 @@ export function productRender(array) {
         
         //Eventos de escucha
         productImage.addEventListener('click', () => createProductDetailAside (product.precio,product.nombre,'descripcion',product.image));
-
-        idProduct++
+        productImgCard.addEventListener('click', addProductsShoppingCart)
     }   
 }
 
+//Creacion dinamica Detalles del producto Home
 function createProductDetailAside (precio,nombre,descripcion,imagen){
     //Elemento Padre
     const renderProductDetail = document.querySelector('.renderProductDetail')
@@ -88,7 +87,6 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
 
     openProductDetailAside ()
 
-    return productDetailSection
     //Info Templeate
 // {
 //     <aside id="productDetail" class="inactive">
@@ -109,13 +107,12 @@ function createProductDetailAside (precio,nombre,descripcion,imagen){
 // }    
 }
 
-export const productDetailSection = document.getElementById('productDetail')
-
+//Cerrar otros contenedores cuando la info del producto esta abierta
 function openProductDetailAside (){
     mobileMenu.classList.remove('showMenu');
-    //productDetailSection.classList.remove('inactive');
 }
 
+// Eliminar dinamicamente el HTML de la informacion del producto creada anteriormente cuando se de click en el icono de cerrar
 function closeProductDetailAside() {
     const renderProductDetail = document.querySelector('.renderProductDetail')
     const productDetail = document.querySelector('#productDetail')
