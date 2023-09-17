@@ -1,6 +1,7 @@
 import { productList } from './utils/addProductsHome.js'
 import { productRender } from './utils/renderProducts.js'
 
+
 // ? Snipet to select the html elements
 const $ = (selector) => document.querySelector(selector);
 
@@ -8,15 +9,12 @@ const $ = (selector) => document.querySelector(selector);
 const correoBarraNavegacion = $('.navbar-email');
 const hamburguerMenu = $('.header_menu');
 const botonShoppingCart = $('.logo_shopping-cart');
-const productDetailCloseIcon = $('.product-detail-close')
 
 // ? Elementos a modificar
 export const mobileMenu = $('.mobile-menu');
-export const productDetailSection = $('#productDetail');
 const desktopMenu = $('.desktop-menu');
 const productsInMyShoppingCart = $('#shoppingCartContainer');
 const containerGalleryProducts = $('.main-container');
-
 
 //? Add Event Listeners
 correoBarraNavegacion.addEventListener('click', openProfile);
@@ -27,7 +25,6 @@ botonShoppingCart.addEventListener('click',  () => {
 containerGalleryProducts.addEventListener('click', () => {
     hiddenElements(productsInMyShoppingCart)
 });
-productDetailCloseIcon.addEventListener('click', closeProductDetailAside)
 
 // ? Function to show and hide elements
 function hiddenElements(...elementos) {
@@ -43,17 +40,24 @@ function openProfile() {
 
 function openMenu() {
     mobileMenu.classList.toggle('showMenu');
-    hiddenElements(productsInMyShoppingCart, productDetailSection)
+    hiddenElements(productsInMyShoppingCart)
+    closeDetailSection()
 }
 
 function openShoppingCar() {
     productsInMyShoppingCart.classList.toggle('inactive');
     mobileMenu.classList.remove('showMenu');
-    productDetailSection.classList.add('inactive');
+    closeDetailSection()
 }
 
-function closeProductDetailAside() {
-    productDetailSection.classList.add('inactive');
+function closeDetailSection() {
+    let productDetailSection = document.getElementById('productDetail')
+
+    if(document.body.contains(productDetailSection)){
+        const renderProductDetail = document.querySelector('.renderProductDetail')
+        const productDetail = document.querySelector('#productDetail')
+        renderProductDetail.removeChild(productDetail)
+    }
 }
 
 productRender(productList);

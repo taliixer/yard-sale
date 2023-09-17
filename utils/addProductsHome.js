@@ -8,6 +8,7 @@ function ingresarProducto(nombre,precio,imagen) {
         image: imagen
     }
     productList.push(producto);
+    
 }
 
 ingresarProducto(
